@@ -1,0 +1,5 @@
+User-agent: *
+
+Allow: /
+
+Sitemap: https://vdlgengenharia.github.io/regularizacao-empresas-amparo/sitemap.xml
