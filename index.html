@@ -1,362 +1,519 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Regularização de Empresas em Amparo | CLCB, PGR, LTCAT e eSocial SST</title>
+  <title>Regulariza Engenharia | CLCB, AVCB, PGR, LTCAT e Engenharia em Amparo</title>
 
-<meta name="description" content="Regularização de empresas em Amparo, Pedreira, Serra Negra e região. CLCB, PGR, LTCAT, eSocial SST e responsabilidade técnica.">
+  <meta name="description" content="Regulariza Engenharia: conformidade técnica para empresas. CLCB, AVCB, PGR, LTCAT, NR10, laudos técnicos, perícias e engenharia elétrica em Amparo, Serra Negra, Pedreira e região.">
 
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
+  <meta name="keywords" content="CLCB Amparo, AVCB Amparo, PGR Amparo, LTCAT Amparo, engenharia elétrica Amparo, laudos técnicos, eSocial SST, NR10, Regulariza Engenharia">
 
-body{
-font-family:Arial,Helvetica,sans-serif;
-background:#f5f7fa;
-color:#1f2937;
-line-height:1.6;
-}
+  <link rel="canonical" href="https://regularizatecnica.com.br/">
 
-.hero{
-background:linear-gradient(135deg,#0d2f5f,#133d75);
-color:white;
-padding:80px 10%;
-}
+  <style>
+    :root {
+      --azul: #0D1B2A;
+      --verde: #22C55E;
+      --cinza: #6B7280;
+      --cinza-claro: #F2F4F7;
+      --branco: #FFFFFF;
+    }
 
-.hero h1{
-font-size:54px;
-line-height:1.1;
-margin-bottom:20px;
-max-width:750px;
-}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-.hero p{
-font-size:22px;
-max-width:750px;
-margin-bottom:25px;
-}
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--azul);
+      background: var(--branco);
+      line-height: 1.6;
+    }
 
-.telefone-topo{
-font-size:22px;
-font-weight:bold;
-margin-top:18px;
-color:white;
-}
+    header {
+      padding: 24px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #e5e7eb;
+      background: var(--branco);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
 
-.btn{
-display:inline-block;
-background:#25D366;
-color:white;
-padding:18px 28px;
-text-decoration:none;
-font-weight:bold;
-border-radius:10px;
-font-size:18px;
-margin-top:10px;
-}
+    .logo {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
 
-.container{
-width:90%;
-max-width:1200px;
-margin:auto;
-}
+    .logo span {
+      color: var(--verde);
+      display: block;
+      font-size: 12px;
+      letter-spacing: 5px;
+      margin-top: -4px;
+    }
 
-.section{
-padding:70px 0;
-}
+    nav a {
+      margin-left: 24px;
+      text-decoration: none;
+      color: var(--azul);
+      font-size: 14px;
+      font-weight: 600;
+    }
 
-.section h2{
-text-align:center;
-font-size:38px;
-margin-bottom:50px;
-color:#0d2f5f;
-}
+    .hero {
+      padding: 90px 8%;
+      background: linear-gradient(120deg, var(--azul) 0%, #13263a 100%);
+      color: var(--branco);
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 60px;
+      align-items: center;
+    }
 
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-}
+    .hero h1 {
+      font-size: 48px;
+      line-height: 1.1;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
 
-.card{
-background:white;
-padding:30px;
-border-radius:15px;
-box-shadow:0 5px 20px rgba(0,0,0,0.08);
-text-align:center;
-}
+    .hero h1 span {
+      color: var(--verde);
+    }
 
-.card h3{
-margin:15px 0;
-color:#0d2f5f;
-font-size:26px;
-}
+    .hero p {
+      font-size: 20px;
+      color: #d1d5db;
+      margin-bottom: 32px;
+      max-width: 680px;
+    }
 
-.card p{
-margin-bottom:15px;
-}
+    .botao {
+      display: inline-block;
+      background: var(--verde);
+      color: var(--azul);
+      padding: 15px 26px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 800;
+    }
 
-.problemas{
-background:#0d2f5f;
-color:white;
-}
+    .hero-card {
+      background: var(--branco);
+      color: var(--azul);
+      padding: 32px;
+      border-radius: 18px;
+    }
 
-.problemas h2{
-color:white;
-}
+    .hero-card h2 {
+      font-size: 22px;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+    }
 
-.lista{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
+    .hero-card ul {
+      list-style: none;
+    }
 
-.item{
-background:white;
-color:#0d2f5f;
-padding:20px;
-border-radius:10px;
-font-weight:bold;
-text-align:center;
-}
+    .hero-card li {
+      margin: 12px 0;
+      color: var(--cinza);
+    }
 
-.cta{
-background:#d4a017;
-padding:80px 10%;
-text-align:center;
-color:white;
-}
+    .hero-card li::before {
+      content: "✓";
+      color: var(--verde);
+      font-weight: bold;
+      margin-right: 8px;
+    }
 
-.cta h2{
-font-size:46px;
-margin-bottom:20px;
-color:white;
-}
+    section {
+      padding: 80px 8%;
+    }
 
-footer{
-background:#091e3b;
-color:white;
-padding:40px;
-text-align:center;
-}
+    .titulo {
+      max-width: 820px;
+      margin-bottom: 42px;
+    }
 
-footer a{
-color:white;
-}
+    .titulo h2 {
+      font-size: 36px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
 
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:18px 22px;
-border-radius:50px;
-font-weight:bold;
-text-decoration:none;
-box-shadow:0 5px 20px rgba(0,0,0,.3);
-}
+    .titulo p {
+      color: var(--cinza);
+      font-size: 18px;
+    }
 
-@media(max-width:768px){
-.hero h1{font-size:38px}
-.hero p{font-size:18px}
-.telefone-topo{font-size:20px}
-.section h2{font-size:30px}
-}
-</style>
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+
+    .card {
+      background: var(--cinza-claro);
+      padding: 28px;
+      border-radius: 16px;
+      border: 1px solid #e5e7eb;
+    }
+
+    .card h3 {
+      font-size: 19px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    .card p {
+      color: var(--cinza);
+      font-size: 15px;
+    }
+
+    .escuro {
+      background: var(--azul);
+      color: var(--branco);
+    }
+
+    .escuro .titulo p,
+    .escuro .card p {
+      color: #d1d5db;
+    }
+
+    .escuro .card {
+      background: #13263a;
+      border: 1px solid #24384f;
+    }
+
+    .passos {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+
+    .numero {
+      color: var(--verde);
+      font-size: 34px;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+
+    .cidades {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .cidade {
+      background: var(--cinza-claro);
+      padding: 12px 18px;
+      border-radius: 999px;
+      font-weight: 600;
+    }
+
+    details {
+      background: var(--cinza-claro);
+      margin-bottom: 14px;
+      padding: 20px;
+      border-radius: 12px;
+    }
+
+    summary {
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    details p {
+      color: var(--cinza);
+      margin-top: 10px;
+    }
+
+    .cta {
+      text-align: center;
+      background: var(--azul);
+      color: var(--branco);
+    }
+
+    .cta h2 {
+      font-size: 38px;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    .cta p {
+      color: #d1d5db;
+      font-size: 18px;
+      margin-bottom: 28px;
+    }
+
+    footer {
+      background: #08111d;
+      color: #d1d5db;
+      padding: 40px 8%;
+      font-size: 14px;
+    }
+
+    footer strong {
+      color: var(--branco);
+    }
+
+    @media (max-width: 900px) {
+      header {
+        display: block;
+      }
+
+      nav {
+        margin-top: 18px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 8px 14px 0 0;
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: 36px;
+      }
+
+      .grid,
+      .passos {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
+<header>
+  <div class="logo">
+    Regulariza
+    <span>Engenharia</span>
+  </div>
+
+  <nav>
+    <a href="#servicos">Serviços</a>
+    <a href="#como-funciona">Como funciona</a>
+    <a href="#cidades">Cidades</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
+
+<main>
+
 <section class="hero">
+  <div>
+    <h1>Conformidade técnica para <span>sua empresa</span></h1>
+    <p>
+      Regularização empresarial com apoio técnico em engenharia, segurança do trabalho,
+      Corpo de Bombeiros, laudos, projetos e documentação obrigatória.
+    </p>
+    <a class="botao" href="#contato">Solicitar orçamento</a>
+  </div>
 
-<h1>Sua empresa está regularizada?</h1>
-
-<p>
-Regularização técnica para empresas de Amparo, Pedreira,
-Serra Negra, Lindóia, Águas de Lindóia e região.
-</p>
-
-<a class="btn" href="https://wa.me/5511963735169?text=Olá,%20gostaria%20de%20regularizar%20minha%20empresa.">
-Solicitar Orçamento pelo WhatsApp
-</a>
-
-<p class="telefone-topo">
-📞 WhatsApp: (11) 96373-5169
-</p>
-
+  <div class="hero-card">
+    <h2>Soluções técnicas</h2>
+    <ul>
+      <li>CLCB e AVCB</li>
+      <li>PGR, LTCAT e eSocial SST</li>
+      <li>NR10, NR12 e segurança técnica</li>
+      <li>Laudos, projetos e ART</li>
+      <li>Engenharia elétrica e perícias</li>
+    </ul>
+  </div>
 </section>
 
-<section class="section container">
+<section id="servicos">
+  <div class="titulo">
+    <h2>Serviços</h2>
+    <p>Atuação técnica para empresas que precisam regularizar documentos, reduzir riscos e manter suas atividades em conformidade.</p>
+  </div>
 
-<h2>Serviços</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>CLCB</h3>
+      <p>Regularização simplificada junto ao Corpo de Bombeiros para empresas de baixo risco.</p>
+    </div>
 
-<div class="cards">
+    <div class="card">
+      <h3>AVCB</h3>
+      <p>Apoio técnico para obtenção ou renovação do Auto de Vistoria do Corpo de Bombeiros.</p>
+    </div>
 
-<div class="card">
-<h3>🧯 CLCB</h3>
-<p>Regularização junto ao Corpo de Bombeiros.</p>
-<a class="btn" href="clcb-amparo.html">Ver CLCB</a>
-</div>
+    <div class="card">
+      <h3>PGR</h3>
+      <p>Programa de Gerenciamento de Riscos para atendimento às exigências de segurança do trabalho.</p>
+    </div>
 
-<div class="card">
-<h3>👷 PGR</h3>
-<p>Programa de Gerenciamento de Riscos.</p>
-</div>
+    <div class="card">
+      <h3>LTCAT</h3>
+      <p>Laudo técnico para caracterização de exposição a agentes nocivos e suporte previdenciário.</p>
+    </div>
 
-<div class="card">
-<h3>📋 LTCAT</h3>
-<p>Laudo Técnico das Condições Ambientais do Trabalho.</p>
-</div>
+    <div class="card">
+      <h3>NR10</h3>
+      <p>Documentação e adequações relacionadas à segurança em instalações e serviços em eletricidade.</p>
+    </div>
 
-<div class="card">
-<h3>💻 eSocial SST</h3>
-<p>Envio correto das informações obrigatórias.</p>
-</div>
+    <div class="card">
+      <h3>Laudos Técnicos</h3>
+      <p>Elaboração de laudos, pareceres e relatórios técnicos com responsabilidade profissional.</p>
+    </div>
 
-</div>
+    <div class="card">
+      <h3>Perícias</h3>
+      <p>Atuação técnica em análises, vistorias e pareceres de engenharia elétrica e segurança.</p>
+    </div>
 
+    <div class="card">
+      <h3>ART</h3>
+      <p>Emissão de Anotação de Responsabilidade Técnica quando aplicável ao serviço contratado.</p>
+    </div>
+  </div>
 </section>
 
-<section class="section container">
+<section class="escuro" id="como-funciona">
+  <div class="titulo">
+    <h2>Como funciona</h2>
+    <p>Processo objetivo, técnico e organizado para empresas que precisam resolver pendências com segurança.</p>
+  </div>
 
-<h2>Conteúdos sobre CLCB</h2>
+  <div class="passos">
+    <div class="card">
+      <div class="numero">01</div>
+      <h3>Análise inicial</h3>
+      <p>Entendemos a atividade da empresa, área, ocupação, documentação existente e necessidade técnica.</p>
+    </div>
 
-<div class="cards">
+    <div class="card">
+      <div class="numero">02</div>
+      <h3>Diagnóstico</h3>
+      <p>Indicamos quais documentos, laudos ou adequações são necessários para a regularização.</p>
+    </div>
 
-<div class="card">
-<h3>CLCB em Amparo</h3>
-<p>Regularização junto ao Corpo de Bombeiros para empresas da região.</p>
-<a class="btn" href="clcb-amparo.html">Acessar</a>
-</div>
+    <div class="card">
+      <div class="numero">03</div>
+      <h3>Execução técnica</h3>
+      <p>Elaboramos documentos, relatórios, projetos, ARTs e orientações técnicas aplicáveis.</p>
+    </div>
 
-<div class="card">
-<h3>Quanto custa um CLCB?</h3>
-<p>Veja os fatores que influenciam no valor da regularização.</p>
-<a class="btn" href="quanto-custa-clcb-amparo.html">Acessar</a>
-</div>
-
-<div class="card">
-<h3>Diferença entre CLCB e AVCB</h3>
-<p>Entenda qual documento sua empresa pode precisar.</p>
-<a class="btn" href="diferenca-clcb-avcb.html">Acessar</a>
-</div>
-
-<div class="card">
-<h3>CLCB para Clínica Odontológica</h3>
-<p>Regularização para consultórios e clínicas odontológicas.</p>
-<a class="btn" href="clcb-clinica-odontologica-amparo.html">Acessar</a>
-</div>
-
-</div>
-
+    <div class="card">
+      <div class="numero">04</div>
+      <h3>Acompanhamento</h3>
+      <p>Apoiamos a empresa durante o processo de regularização e nas etapas posteriores.</p>
+    </div>
+  </div>
 </section>
 
-<section class="section problemas">
+<section>
+  <div class="titulo">
+    <h2>Por que escolher a Regulariza Engenharia?</h2>
+    <p>Regularização não é apenas emissão de documentos. É redução de riscos, organização técnica e proteção da empresa.</p>
+  </div>
 
-<div class="container">
+  <div class="grid">
+    <div class="card">
+      <h3>Responsabilidade técnica</h3>
+      <p>Serviços conduzidos por profissional habilitado, com atuação técnica e documental.</p>
+    </div>
 
-<h2>Evite problemas com</h2>
+    <div class="card">
+      <h3>Atendimento empresarial</h3>
+      <p>Foco em empresas, com linguagem clara e orientação prática para o empresário.</p>
+    </div>
 
-<div class="lista">
+    <div class="card">
+      <h3>Conformidade</h3>
+      <p>Documentos elaborados com atenção às exigências legais, técnicas e regulatórias.</p>
+    </div>
 
-<div class="item">Fiscalizações</div>
-<div class="item">Corpo de Bombeiros</div>
-<div class="item">Ministério do Trabalho</div>
-<div class="item">eSocial</div>
-<div class="item">Multas e autuações</div>
-<div class="item">Documentação irregular</div>
-
-</div>
-
-</div>
-
+    <div class="card">
+      <h3>Organização</h3>
+      <p>Processo estruturado para evitar retrabalho, perda de prazo e documentação incompleta.</p>
+    </div>
+  </div>
 </section>
 
-<section class="section container">
+<section id="cidades">
+  <div class="titulo">
+    <h2>Cidades atendidas</h2>
+    <p>Atendimento regional para empresas de Amparo e municípios próximos.</p>
+  </div>
 
-<h2>Responsável Técnico</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<h3>Vinicius Montini Correia</h3>
-
-<p>
-Engenheiro Eletricista<br>
-Engenheiro de Segurança do Trabalho
-</p>
-
-<p>
-<strong>CREA-SP 5062329801</strong>
-</p>
-
-<p>
-📞 WhatsApp: <strong>(11) 96373-5169</strong>
-</p>
-
-</div>
-
-</div>
-
+  <div class="cidades">
+    <div class="cidade">Amparo</div>
+    <div class="cidade">Serra Negra</div>
+    <div class="cidade">Pedreira</div>
+    <div class="cidade">Monte Alegre do Sul</div>
+    <div class="cidade">Socorro</div>
+    <div class="cidade">Jaguariúna</div>
+    <div class="cidade">Lindóia</div>
+    <div class="cidade">Águas de Lindóia</div>
+    <div class="cidade">Campinas</div>
+    <div class="cidade">Região do Circuito das Águas</div>
+  </div>
 </section>
 
-<section class="cta">
+<section id="faq">
+  <div class="titulo">
+    <h2>Perguntas frequentes</h2>
+    <p>Dúvidas comuns sobre regularização técnica, Corpo de Bombeiros e documentos de segurança do trabalho.</p>
+  </div>
 
-<h2>Vamos conversar?</h2>
+  <details>
+    <summary>Minha empresa precisa de CLCB ou AVCB?</summary>
+    <p>Depende da atividade, área construída, ocupação, altura da edificação e nível de risco. A análise inicial identifica o enquadramento correto.</p>
+  </details>
 
-<p>
-Receba uma orientação inicial sem compromisso.
-</p>
+  <details>
+    <summary>Quanto custa um CLCB?</summary>
+    <p>O valor varia conforme a área, tipo de atividade, documentação existente e eventuais adequações necessárias.</p>
+  </details>
 
-<p style="font-size:22px;font-weight:bold;margin-top:15px;">
-📞 WhatsApp: (11) 96373-5169
-</p>
+  <details>
+    <summary>MEI precisa de PGR?</summary>
+    <p>Em alguns casos pode haver dispensa ou tratamento simplificado, mas isso depende da atividade, existência de empregado e riscos envolvidos.</p>
+  </details>
 
-<br>
+  <details>
+    <summary>O que é LTCAT?</summary>
+    <p>É um laudo técnico utilizado para avaliar exposição a agentes nocivos, com finalidade previdenciária.</p>
+  </details>
 
-<a class="btn" href="https://wa.me/5511963735169?text=Olá,%20gostaria%20de%20uma%20orientação%20sobre%20regularização%20da%20minha%20empresa.">
-Chamar no WhatsApp
-</a>
-
+  <details>
+    <summary>A Regulariza Engenharia emite ART?</summary>
+    <p>Sim, quando o serviço exige responsabilidade técnica e está dentro das atribuições profissionais aplicáveis.</p>
+  </details>
 </section>
+
+<section class="cta" id="contato">
+  <h2>Regularize sua empresa com apoio técnico</h2>
+  <p>Envie as informações da sua empresa para uma análise inicial.</p>
+  <a class="botao" href="mailto:contato@regularizatecnica.com.br">Solicitar orçamento</a>
+</section>
+
+</main>
 
 <footer>
-
-<p>
-<strong>Vinicius Montini Correia</strong><br>
-Engenheiro Eletricista | Engenheiro de Segurança do Trabalho<br>
-CREA-SP 5062329801
-</p>
-
-<br>
-
-<p>
-📞 WhatsApp: <strong>(11) 96373-5169</strong>
-</p>
-
-<br>
-
-<p>
-Atendimento em Amparo, Pedreira, Serra Negra, Monte Alegre do Sul, Lindóia, Águas de Lindóia e região.
-</p>
-
-<br>
-
-<p>
-<a href="clcb-amparo.html">CLCB em Amparo</a> |
-<a href="quanto-custa-clcb-amparo.html">Quanto custa CLCB</a> |
-<a href="diferenca-clcb-avcb.html">CLCB x AVCB</a> |
-<a href="clcb-clinica-odontologica-amparo.html">CLCB Clínica Odontológica</a>
-</p>
-
+  <p><strong>Regulariza Engenharia</strong> — Conformidade Técnica para Empresas</p>
+  <p>CLCB • AVCB • PGR • LTCAT • NR10 • Laudos Técnicos • Engenharia Elétrica • Perícias</p>
+  <p>Atendimento em Amparo, Serra Negra, Pedreira, Monte Alegre do Sul, Socorro e região.</p>
 </footer>
-
-<a class="whatsapp" href="https://wa.me/5511963735169?text=Olá,%20gostaria%20de%20regularizar%20minha%20empresa.">
-WhatsApp
-</a>
 
 </body>
 </html>
